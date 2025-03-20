@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: beige;
+            border: solid,5px,black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+             flex-wrap: wrap; 
+            height: 1200px;
+            /*justify-content: It will set the boxes horizontally at center*/
+            /*justify-content: space-between; First box wil start from corner and last box will end the corner*/
+           /* justify-content: space-around; Space between box before and after is same*/
+           /* justify-content: space-evenly; Space between two box is equal*/
+            align-items: center; /*Heere it is vertically align the items into centre*/
+        }
+        .box
+        {
+            height: 200px;
+            width: 200px;
+            border: solid,3px,black;
+            margin: 2px;
+            padding: 2px;
+           
+        }
+        #box1
+        {
+            background-color: aqua;
+            order: 500; /* it wiil appear at the end */
+            /* flex-shrink: 5; */
+        }
+        #box2
+        {
+            background-color: brown;
+        }
+        #box3
+        {
+            background-color: cadetblue;
+            /* flex-basis: 400px; It will set box_3 width as 400px */
+        }
+        #box4
+        {
+            background-color: crimson;
+            order: -1; /* It wil appear at the beginning */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id ="box1">Box_1</div>
+        <div class="box" id="box2">Box_2</div>
+        <div class="box" id="box3">Box_3</div>
+        <div class="box" id="box4">Box_4</div>
+    </div>
+</body>
+</html>
