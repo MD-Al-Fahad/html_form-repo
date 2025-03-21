@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: beige;
+            border: 2px,solid,black;
+            margin: 10px;
+            padding:2px;
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+        }
+        #box_left
+        {
+            background-color: aqua;
+            border:solid,3px,brown;
+            width: 47%;
+            margin:2px;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        #box_right
+        {
+            background-color: yellow;
+            border: solid,3px,rebeccapurple;
+            width: 47%;
+            margin:2px;
+            padding: 3px;
+        }
+        p{
+            border:2px,solid,black;
+        }
+        img{
+            width:100px;
+            height: 200px;
+        }
+        @media(max-width:640px)
+        {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box_left">
+            <p>Text_One</p>
+            <p>Text_two</p>
+        </div>
+        <div class="box" id="box_right">
+            <img src="Schrods-cat.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

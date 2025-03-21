@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            background-color: beige;
+            height: 400px;
+            width: 400px;
+            border: solid,3px,black;
+        }
+        @media(min-width: 500px) /* if width is greater than 500px then it will be brown*/
+        {
+            .box{
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Welcome to media query content!
+    </div>
+</body>
+</html>
