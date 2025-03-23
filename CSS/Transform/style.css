@@ -1,0 +1,32 @@
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.box
+{
+    height: 300px;
+    width: 300px;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 4s linear 1s;
+
+}
+.box:hover
+{
+    /* transform: rotate(45deg); */
+    /* transform: scale(2); */
+    /* transform: skew(70deg); */
+    transform: translate(0px,200px);
+}
