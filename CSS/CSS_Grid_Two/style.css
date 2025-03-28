@@ -1,0 +1,33 @@
+*
+{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(101, 92, 105);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    border: 3px solid brown ;
+    padding: 4rem;
+}    
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(106, 42, 216);
+    border: 4px solid rgb(234, 220, 220);
+    /* justify-self: end; here we work with horizontal grid
+    align-self: center; here we work with vertical grid */
+    place-self: center;
+}
