@@ -44,3 +44,23 @@ let text2 = "Doe";
 let text3 = text1 + " " + text2;
 
 console.log(text3)
+
+
+// example of shalow copy
+const a = {
+    en: 'Hello',
+    de: 'Hallo',
+    es: 'Hola',
+    pt: 'Olà'
+  }
+  
+  let b = a
+  b.pt = 'Oi'
+  console.log(typeof(a))
+  console.log(b.pt) // Oi
+  console.log(a.pt) // Oi
+  const numbers = [10, 20, 30, 40];
+
+const result = numbers.find(num => num > 25);
+
+console.log(result); // 30
