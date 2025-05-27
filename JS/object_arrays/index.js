@@ -40,9 +40,9 @@
 
 // console.log(brr);
 
-// // console.log(brr);
+// console.log(brr);
 
-// // console.log(typeof(brr));
+// console.log(typeof(brr));
 
 
 // let arr = [10,20,30,11,21,44,51];
@@ -131,15 +131,15 @@
 //     console.log(val);
 // }
 
-let arr = [10,20,30,40,50];
+// let arr = [10,20,30,40,50];
 
-let getSum = (arr) => {
-    let sum = 0;
-    arr.forEach((value) => {
-        sum = sum + value;
-    })
-    return sum;
-}
+// let getSum = (arr) => {
+//     let sum = 0;
+//     arr.forEach((value) => {
+//         sum = sum + value;
+//     })
+//     return sum;
+// }
 
-let totalSum = getSum(arr);
-console.log(totalSum);
+// let totalSum = getSum(arr);
+// console.log(totalSum);

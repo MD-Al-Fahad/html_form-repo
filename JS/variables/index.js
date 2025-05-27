@@ -14,6 +14,7 @@ solve();
     console.log(a);
 }
 
+
 // console.log(a); it will be error, as a can be used only into the blockscope
 
 
@@ -53,7 +54,9 @@ const a = {
     es: 'Hola',
     pt: 'Olà'
   }
-  
+//   b is not a new object; it references the same memory location as a.
+
+// This means any change to b will also affect a, and vice versa.
   let b = a
   b.pt = 'Oi'
   console.log(typeof(a))
